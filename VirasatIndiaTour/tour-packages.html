@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>VIT- TOUR PACKAGES </title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+    <style>
+
+        
+       
+        .ex-header{
+            background-image: url(/images/tour-packages.jpg) ;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute; /* Positions the overlay inside the header */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            z-index: 1; /* Ensures overlay is above the header content */
+         }
+
+         .container {
+        position: relative; /* Ensures the content is above the overlay */
+        z-index: 2; /* Ensures the header content appears above the overlay */
+    }
+
+    .tour-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    background-color: #F1F0EF;
+}
+
+.image img {
+    width: 399px;
+    height: 336px;
+    border-radius: 10px;
+}
+
+.name-tour {
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: top;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.details ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.details ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.details h2 {
+    font-size: 2rem;
+}
+
+.details p {
+    font-size: 1.5rem;
+}
+
+.details ul li span {
+    font-size: 0.5rem;
+}
+
+.budget {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F1F0EF;
+}
+
+.money {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.details .bottom {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    display: flex; /* Use flex layout for horizontal alignment */
+    gap: 10px; /* Space between items */
+    padding: 10px 0; /* Add padding for better spacing */
+    scrollbar-width: none; /* Hide scrollbar */
+    -ms-overflow-style: none;
+}
+
+.bottom::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.details .bottom ul {
+    display: flex; /* Ensure list items are in a single row */
+    gap: 10px; /* Space between list items */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove default list styling */
+}
+
+.details .bottom ul li {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    flex-shrink: 0; /* Prevent items from shrinking */
+    background-color: #f1f1f1; /* Optional: Add a background color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px;
+    max-width: fit-content; /* Set a minimum width for list items */
+    text-align: center; /* Center align text */
+}
+
+.details .bottom ul li .inner {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    align-items: center; /* Center align content */
+}
+
+.details .bottom ul li .path {
+    margin-left: 10px;
+    font-size: 1rem; /* Adjust arrow size */
+    color: black;
+    
+}
+
+.details .bottom {
+    scroll-behavior: smooth;
+}
+
+/* Media query for devices with a max width of 768px (tablets and small screens) */
+@media (max-width: 768px) {
+    .tour-details {
+        flex-direction: column; /* Stack content vertically */
+        width: 95vw; /* Adjust width for smaller screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .image img {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .name-tour {
+        width: 100%; /* Full width */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .details ul {
+        display: flex; /* Display items in a row */
+        flex-direction: row; /* Stack items vertically */
+        padding-left: 0; /* Remove unnecessary padding */
+        flex-wrap: nowrap; /* Wrap items to next line if necessary */
+        gap: 10px; /* Add space between items */
+    }
+
+    .details ul li {
+        width: 100%; /* Full width for list items */
+        font-size: 0.9rem; /* Slightly increase font size for readability */
+    }
+
+    .budget {
+        flex-direction: column; /* Stack items vertically */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .money {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .details .bottom {
+        overflow-x: scroll; /* Enable horizontal scroll on mobile */
+        white-space: nowrap; /* Ensure list items stay on a single line */
+    }
+
+    .details .bottom ul {
+        flex-wrap: nowrap; /* Ensure no wrapping occurs */
+    }
+}
+
+/* Media query for devices with a max width of 480px (mobile phones) */
+@media (max-width: 480px) {
+    .tour-details {
+        width: 100%; /* Full width for very small screens */
+        margin: 10px auto; /* Adjust margins */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .image img {
+        max-width: 100%; /* Ensure image does not exceed container */
+    }
+
+    .details h2 {
+        font-size: 1.5rem; /* Reduce heading size */
+    }
+
+    .details p {
+        font-size: 1rem; /* Reduce paragraph size */
+    }
+
+    .details ul li {
+        font-size: 0.8rem; /* Reduce text size further */
+    }
+
+    .money {
+        font-size: 1rem; /* Further reduce font size */
+    }
+}
+
+
+    
+    </style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/index.html">HOME </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/about-us.html">ABOUT US<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">TOUR PACKAGES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/luxury-ac-car.html">LUXURY AC CAR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/luxury-ac-bus.html">LUXURY AC BUS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#projects">WHY CHOOSE US</a>
+                </li>
+
+                <!-- Dropdown Menu -->          
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">TOUR PACKAGES</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">RAJSTHAN TOUR PACKAGES</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">ROYAL RAJASTHAN TOUR</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">MAJESTIC RAJASTHAN TOUR </span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">RAJASTAHN CULTURAL</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">GLORIOUS RAJASTHAN TOUR</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">AJMER PUSHKAR TOUR</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">GOLDEN TRIANGLE TOUR</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/Contact-Us.html">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+    <header id="header" class="ex-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Tour Packages</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Tour Packages</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+<div class="tour-details">
+    <div class="image">
+        <img src="/images/project-1.jpg" alt="">
+    </div>
+    <div class="name-tour">
+        <div class="details">
+            <div class="top">
+                <h2 >JOURNEY TO EMPIRE</h2>
+                <p >A TASTE OF ROYALTY</p>
+            </div>
+            <div class="bottom">
+                <ul>
+                <li>
+                    <div class="inner">Jaipur 
+                        <span>(2 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Bikaner 
+                        <span>(2 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Jaisalmer 
+                        <span>(2 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Jodhpur 
+                        <span>(2 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Mount Abu 
+                        <span>(2 Nights)</span>
+                    </div>
+                    <div class="path" style="display: none;">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+               
+                </ul>
+            </div>
+        </div>
+        
+        <div class="budget">
+            <div class="money">₹ 30,500 <span>Per Person</span></div>
+            
+            <!-- Elegant Slide Button -->
+            <a class="btn-solid-lg page-scroll" href="#intro">EXPLORE</a>
+        </div>
+    </div>
+</div>
+<div class="tour-details">
+    <div class="image">
+        <img src="/images/royal-kingdom.jpg" alt="">
+    </div>
+    <div class="name-tour">
+        <div class="details">
+            <div class="top">
+                <h2 >ROYAL KINGDOM</h2>
+                <p >Kingdom OF Kings</p>
+            </div>
+            <div class="bottom">
+                <ul>
+                <li>
+                    <div class="inner">Jaipur 
+                        <span>(2 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Bikaner 
+                        <span>(1 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Jaisalmer 
+                        <span>(2 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Jodhpur 
+                        <span>(1 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Udaipur
+                        <span>(2 Night)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Pushkar / Ajmer
+                        <span>(1 Night)</span>
+                    </div>
+                    <div class="path" style="display: none;">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+               
+                </ul>
+            </div>
+        </div>
+        
+        <div class="budget">
+            <div class="money">₹ 30,500 <span>Per Person</span></div>
+            
+            <!-- Elegant Slide Button -->
+            <a class="btn-solid-lg page-scroll" href="#intro">EXPLORE</a>
+        </div>
+    </div>
+</div>
+<div class="tour-details">
+    <div class="image">
+        <img src="/images/Royal-Journey.jpg" alt="">
+    </div>
+    <div class="name-tour">
+        <div class="details">
+            <div class="top">
+                <h2 >ROYAL JOURNEY</h2>
+                <p >JOURNEY TO THE ROYALNESS</p>
+            </div>
+            <div class="bottom">
+                <ul>
+                <li>
+                    <div class="inner">Delhi
+                        <span style="display: none;">(2 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Agra 
+                        <span>(1 Night)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Jaipur 
+                        <span>(2 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Bikaner 
+                        <span>(1 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Jaisalmer
+                        <span>(2 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Jodhpur
+                        <span>(1 Night)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Udaipur
+                        <span style="display: none;">(2 Nights)</span>
+                    </div>
+                    <div class="path" style="display: none;">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+               
+                </ul>
+            </div>
+        </div>
+        
+        <div class="budget">
+            <div class="money">₹ 30,500 <span>Per Person</span></div>
+            
+            <!-- Elegant Slide Button -->
+            <a class="btn-solid-lg page-scroll" href="#intro">EXPLORE</a>
+        </div>
+    </div>
+</div>
+<div class="tour-details">
+    <div class="image">
+        <img src="/images/royal-kingdom.jpg" alt="">
+    </div>
+    <div class="name-tour">
+        <div class="details">
+            <div class="top">
+                <h2 >ROYAL KINGDOM</h2>
+                <p >Kingdom OF Kings</p>
+            </div>
+            <div class="bottom">
+                <ul>
+                <li>
+                    <div class="inner">Jaipur 
+                        <span>(2 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Bikaner 
+                        <span>(1 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Jaisalmer 
+                        <span>(2 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Jodhpur 
+                        <span>(1 Nights)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Udaipur
+                        <span>(2 Night)</span>
+                    </div>
+                    <div class="path">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="inner">Pushkar / Ajmer
+                        <span>(1 Night)</span>
+                    </div>
+                    <div class="path" style="display: none;">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </li>
+               
+                </ul>
+            </div>
+        </div>
+        
+        <div class="budget">
+            <div class="money">₹ 30,500 <span>Per Person</span></div>
+            
+            <!-- Elegant Slide Button -->
+            <a class="btn-solid-lg page-scroll" href="#intro">EXPLORE</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Breadcrumbs -->
+    <div class="ex-basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumbs">
+                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Tour Packages</span>
+                    </div> <!-- end of breadcrumbs -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of breadcrumbs -->
+
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container about">
+                        <h4>Meaning Of Virasat</h4>
+                        <p class="white">"Virasat" typically evokes the rich cultural and architectural heritage, such as forts, palaces, traditional art forms, and deep-rooted tradition</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Links</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="#your-link">HOME</a>
+                            </li>
+                            <li>
+                                <a class="white" href="terms-conditions.html">ABOUT</a>
+                            </li>
+                            <li>
+                                <a class="white" href="privacy-policy.html">TOUR PACKAGES</a>
+                            </li>
+                            <li>
+                                <a class="white" href="privacy-policy.html">WHY CHOOSE US</a>
+                            </li>
+                            <li>
+                                <a class="white" href="privacy-policy.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Tools</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="#your-link">businessgrowth.com</a>
+                            </li>
+                            <li>
+                               <a class="white" href="#your-link">influencers.com</a>
+                            </li>
+                            <li class="media">
+                                <a class="white" href="#your-link">optimizer.net</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Partners</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="#your-link">unicorns.com</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#your-link">staffmanager.com</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#your-link">association.gov</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+ 
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2025 <a href="https://virasatindiatour.com">Virasat India Tour Pvt Ltd.</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+
+    
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
